@@ -23,7 +23,7 @@ jobs:
         uses: actions/setup-node@v3
       - run: npm install
       - run: npm run build
-      - run: touch ./out/.nojekyll && gh-pages -d out -t true
+      - run: touch ./out/.nojekyll
         env:
             CI: true
 
